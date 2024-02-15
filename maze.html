@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>DFS - RANDOM MAZE GENERATOR AND SOLUTION<br /></h1>
+						<p> Programmed and developed a random maze generator that's able to find it's own solution using a septh First Search algorithm and implented on wxWidgets for GUI and C++.</p>
+					</div>
+
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Back to Home</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+                        
+                            <center>
+                                <section class="posts">
+								    <article>
+                                        <header>
+                                            <h2><a >Step 1 <br /></a></h2>
+									    </header>
+									    <p>Created a maze on a Pane with a two dimensional array of Cells using wxWidgets</p>
+										<a href="images/maze1.PNG" class="image fit"><img src="images/maze1.PNG" alt="" /></a>
+										
+										<!-- new section -->
+
+										<header>
+                                            <h2><a >Step 2<br /></a></h2>
+									    </header>								
+                                        <p>Using wxSmith to automatically write framework code in wxWidgets where the algorithm can be implemented. The algorithm checks for available neighbors of a cell.
+										   An origin cell is specified and then each neighbor (top, right, bottom, left) is checked to see if it is an available edge.  The maze is explored while neighbor 
+										   edges are available.  Cells being explored are marked pink color.  The algorithm stops when "No Neighbors" are available.</p>
+									    <a href="images/maze4.PNG" class="image fit"><img src="images/maze4.PNG" alt="" /></a>											
+
+                                        <!-- new section -->
+
+                                        <header>
+                                            <h2><a >Step 3<br /></a></h2>
+									    </header>
+                                        <p>the previous wxWidgets framework with simple modifications. In this step, we will be clearing the Walls for the Current Cell and also the 'from' Cell. 
+										    A link for the 'from' cell is saved in the current cell for tracing the solution. </p>
+										<a href="images/maze5.PNG" class="image fit"><img src="images/maze5.PNG" alt="" /></a>		
+                                           
+										<!-- new section -->
+
+                                        <header>
+                                            <h2><a >Step 4 (Last Step)<br /></a></h2>
+									    </header>  
+										<p>All cells in the Matrix are explored using a stack of available cells.  Once all the backtracking is complete, all cells have been explored and the Maze is complete. 
+										   The a path from any target cell in the Maze can be found to the the graph origin.</p>
+										<a href="images/maze2.PNG" class="image fit"><img src="images/maze2.PNG" alt="" /></a>   
+										<a href="images/maze3.PNG" class="image fit"><img src="images/maze3.PNG" alt="" /></a> 
+										
+										<!-- new section -->
+
+                                        <header>
+                                            <h2><a >Resources<br /></a></h2>
+									    </header>
+										<ul class="links">
+											<li class="active"><a href="https://thecodingtrain.com/challenges/10-dfs-maze-generator"><p>Maze Tutorial: https://thecodingtrain.com/challenges/10-dfs-maze-generator</p></a></li>
+											<li class="active"><a href="https://www.wxwidgets.org/about/screenshots/"><p>wxWidgets Applications: https://www.wxwidgets.org/about/screenshots/</p></a></li>
+											<li class="active"><a href="https://www.informit.com/articles/printerfriendly/606222"><p>Programming C++ GUIs with the wxWidgets Library: https://www.informit.com/articles/printerfriendly/606222</p></a></li>
+											<li class="active"><a href="https://docs.wxwidgets.org/trunk/index.html"><p>wxWidgets online manuals: https://docs.wxwidgets.org/trunk/index.html</p></a></li>
+
+										</ul> 
+
+								    </article>
+                                </section>
+                            </center>
+
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+
+						<section class="split contact">
+							<section class="alt">
+								<h3>Phone</h3>
+								<p><a>(786) 282-2875</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a>Mudassir9nine@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/muda99/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+									<li><a href="https://github.com/Muda-1999" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

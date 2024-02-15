@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>PORTABLE AD BLOCKER<br /></h1>
+						<p>Designed and implemented a small low powered and portable functioning Ad blocker to reduce/remove the ads presented on apps like free games</p>
+					</div>
+
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Back to Home</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+                        
+                            <center>
+                                <section class="posts">
+								    <article>
+                                        <header>
+                                            <h2><a >Project Objectives <br /></a></h2>
+									    </header>
+									    <p>The objective for the project is to have a functioning Ad blocker to reduce/remove the ads 
+											presented on apps like free games. A future objective is to remove and eliminate all ads on 
+											websites like YouTube without compromising user experience. </p>
+										
+										<!-- new section -->
+
+										<header>
+                                            <h2><a >Components Used <br /></a></h2>
+									    </header>								
+                                        <p>• Router (any with internet connections)
+											<br>• Ethernet cable (For connecting the Pi to the Router)
+											<br>• VNC (For remote access)
+											<br>• Raspberry pi 4 or 3
+											<br>• MicroSD card (with Raspbian) 
+											<br>• Access to the admin controls of router</p>
+</p>										
+                                            <!-- new section -->
+
+                                        <header>
+                                            <h2><a >Picture or Schematic of the System<br /></a></h2>
+									    </header>
+										 <a href="images/ad1.PNG" class="image fit"><img src="images/ad1.PNG" alt="" /></a>		
+										 <a href="images/ad3.PNG" class="image fit"><img src="images/ad3.PNG" alt="" /></a>	
+										 <a href="images/ad2.PNG" class="image fit"><img src="images/ad2.PNG" alt="" /></a>								                                       
+                                           <!-- new section -->
+
+                                        <header>
+                                            <h2><a >Setup<br /></a></h2>
+									    </header> 
+											<a href="images/ad4.PNG" class="image fit"><img src="images/ad4.PNG" alt="" /></a>								                                       
+										    <p>• Static IP
+											<br>• Connect directly to router
+											<br>• Can be connected to anything with DNS settings</p>  
+											
+										 <!-- new section -->
+
+                                        <header>
+                                            <h2><a >Results<br /></a></h2>
+									    </header> 
+											<a href="images/ad5.PNG" class="image fit"><img src="images/ad5.PNG" alt="" /></a>								                                       
+										    <a href="images/ad6.PNG" class="image fit"><img src="images/ad6.PNG" alt="" /></a>								                                       
+											<p>Video’s of Ad Blocker work on webistes:</p>
+											<ul class="links">
+												<li class="active"><a href="https://youtu.be/JFAy9VVgPss"><p>https://youtu.be/JFAy9VVgPss</p></a></li>
+												<li class="active"><a href="https://youtu.be/xN__xC2tZz0"><p>https://youtu.be/xN__xC2tZz0</p></a></li>
+											</ul>
+
+										<!-- new section -->
+
+										<header>
+                                            <h2><a >Troubleshooting <br /></a></h2>
+									    </header>
+											<ul class="links">
+												<li class="active"><a href="https://docs.google.com/document/d/180GoY6gmmdN5M0w59DfNiCRyl-BDWSXFFmvFLfhjUCQ/edit?usp=sharing"><p>https://docs.google.com/document/d/180GoY6gmmdN5M0w59DfNiCRyl-BDWSXFFmvFLfhjUCQ/edit?usp=sharing</p></a></li>
+											</ul>
+
+										<!-- new section -->
+										
+										<header>
+                                            <h2><a >Project Objectives <br /></a></h2>
+									    </header>
+									    <p>During the project, we ran into a few issues. The issues included having technical issues with 
+											getting the program to run because of the code itself was not working as intended. We fixed 
+											this issue by going into the code and editing the DNS records which we provided to allow the 
+											code to have bigger list of severs to block. However, this brought up another issue in which that 
+											we had conflicting DNS servers that should not have been in the blacklist and thus restricting 
+											the ability to use the site correctly. For this issue we went back into the records and found 
+											where we thought the address would be and tested the ones, we thought it could be adding 
+											them to the whitelist allowing them through. Our main goal for the project was to reduce or if 
+											possible, completely take away all Ads on YouTube but we soon found out that it would be 
+											nearly impossible because the task is like shooting a moving target because sometimes the 
+											target will be hit and block the add before it shows up but other times it doesn’t and allows the 
+											Ad to come through. This is a give and take because when trying to block them out entirely you 
+											also block out some key things that YouTube does like adding the video to already watched or 
+											adding videos to your recommendation tab. </p>
+										
+										<!-- new section -->
+
+										<header>
+                                            <h2><a >Recommendations and/or Conclusions <br /></a></h2>
+									    </header>
+									    <p>For future modification we would like to get a working GUI that is very easy to use. Along those 
+											lines we would like to also make a chromium App that functions and does the same thing but not 
+											on a network scale more personal browser. The project was successful in its goal of removing all 
+											advertainments in applications that were riddled with them. However, it was not successful in 
+											our secondary goal of making removing all or most of the Ads on YouTube. Further testing will be 
+											required to create an array to expand the DNS list to reduce the Ads even further. Reason for the 
+											code not removing the YouTube ads is because the DNS servers that they use for ads is always 
+											changing and change very little but enough to not be in the list of DNS to blacklist thus having an 
+											array will filter out those discrepancies. This application was only limited to cellphones during our 
+											testing but can be expanded to anything with a DNS setting. Thus, not being limited to only 
+											cellular devices </p>
+										
+										<!-- new section -->
+											
+
+
+								    </article>
+                                </section>
+                            </center>
+
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+
+						<section class="split contact">
+							<section class="alt">
+								<h3>Phone</h3>
+								<p><a>(786) 282-2875</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a>Mudassir9nine@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/muda99/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+									<li><a href="https://github.com/Muda-1999" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

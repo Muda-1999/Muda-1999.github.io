@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>FPGA HDMI SIGNAL PROCESSING APPLICATION<br /></h1>
+						<p>implemented on a Zybo-Z7020, a device with real-time HDMI signal processing and modified with Verilog and C++</a></p>
+					</div>
+
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Back to Home</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+                        
+                            <center>
+                                <section class="posts">
+								    <article>
+									    <a href="images/hdmi.PNG" class="image fit"><img src="images/hdmi.PNG" alt="" /></a>
+                                        <header>
+                                            <h2><a >Project Objectives<br /></a></h2>
+									    </header>
+									    <p>Our main objective for this project was to teach the FPGA board to read and manipulate 
+                                            images through the interaction of UART, and the same image to be displayed on the other
+                                            monitor. This design is helpful becausethe FPGA board running with these peripherals 
+                                            and specifications can be utilized as anexternal monitor and project the same image 
+                                            through a different monitor.</p>
+                                        <p>− Video data streams through the HDMI port and through the HDMI source port.
+                                            <br>− A UART interface to configure what is output through the HDMI.
+                                            <br>− The three-frame buffer we use to help us manipulate what to display. </p>
+                                        
+                                            <!-- new section -->
+
+                                        <header>
+                                            <h2><a >COMPONENTS USED<br /></a></h2>
+									    </header>
+                                        <p>• FPGA Board
+                                            <br>• HDMI Cables
+                                            <br>• UART cable
+                                            <br>• Two Laptops that work as our monitors or a simple monitor with an HDMI port.
+                                            <br>• We also use download Vivado version 2018.2 to create our design </p>
+                                            <a href="images/block.PNG" class="image fit"><img src="images/block.PNG" alt="" /></a>
+                                             <p>In this design layout you can see, we place an AXI direct memory access IP which 
+                                                provides high bandwidth memory access between the AXI peripherals that control Stream 
+                                                Subset Converter and AXI Stream to Video out, and other peripherals that help the board 
+                                                to transmit or invert the frame of the image out.</p>
+                                            
+                                            <!-- new section -->
+
+                                        <header>
+                                            <h2><a >TROUBLESHOOTING<br /></a></h2>
+									    </header>
+                                        <p>• We get some issues changing the resolution of the HDMI output to the monitor. 
+                                            But we get help from a tutorial on how to manipulate the code to capture to 
+                                            correct resolution and that way the FPGA board responds correctly.
+                                            <br>• We successfully start/stop as a test streaming the video data from HDMI to the 
+                                            chosen video frame buffer. Furthermore, we invert and store the current video 
+                                            frame into the next video frame buffer and scale the current video frame to display 
+                                            the resolution, store it, and then display it in real-time on the other monitor. </p>                                       
+
+                                           <!-- new section -->
+
+                                        <header>
+                                            <h2><a >CONCLUSION<br /></a></h2>
+									    </header>
+                                        <p>• In conclusion, I believe that Zybo Z7-20 is a great first FPGA board. I found that while you 
+                                            can tell a CPU what to do, you can tell an FPGA board what to be. In this case, I told it to 
+                                            be a signal processing device, to display the image from one monitor to another allowing 
+                                            to invert the frame of the image with its I/O and oscillator capabilities. We also focus on 
+                                            simply processing and modifying an HDMI video signal in real-time. This will serve as a 
+                                            proof of concept before incorporating more advanced machine learning capabilities.
+                                            Because of its cheap price, it is a great board to get a jumping-off point. A downside of the 
+                                            Zybo-Z7-20 is that there isn’t much guidance on how to get started. For this project, we
+                                            didn’t know where to start, we know because of its peripherals and connectors, making 
+                                            the FPGA board invert frame with buffer and make the transition of images was not a 
+                                            difficult feat but we didn’t know where to start, and especially how to use VHDL well. We
+                                            found a lot of resources (forums) online that help, but even then, it is still limited. But we 
+                                            were able to make this design work and I believe we accomplished our objectives </p>                                       
+
+										<header>
+                                            <h2><a >References and Resources<br /></a></h2>
+									    </header>
+										<ul class="links">
+											<li class="active"><a href="https://forum.digilentinc.com/topic/4787-hdmi-output-demo-top-module/"><p>https://forum.digilentinc.com/topic/4787-hdmi-output-demo-top-module/</p></a></li>
+											<li class="active"><a href="https://digilent.com/reference/programmable-logic/zybo-z7/demos/hdmi"><p>https://digilent.com/reference/programmable-logic/zybo-z7/demos/hdmi</p></a></li>
+											<li class="active"><a href="https://www.intel.com/content/www/us/en/industrial-automation/programmable/applications/machine-vision.html"><p>https://www.intel.com/content/www/us/en/industrial-automation/programmable/applications/machine-vision.html</p></a></li>
+											<li class="active"><a href="https://www.udemy.com/course/video-processing-with-fpga/"><p>https://www.udemy.com/course/video-processing-with-fpga/</p></a></li>
+											<li class="active"><a href="https://www.intel.com/content/dam/www/programmable/us/en/pdfs/literature/wp/wp-video0306.pdf"><p>https://www.intel.com/content/dam/www/programmable/us/en/pdfs/literature/wp/wp-video0306.pdf</p></a></li>
+										</ul>
+
+								    </article>
+                                </section>
+                            </center>
+
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+
+						<section class="split contact">
+							<section class="alt">
+								<h3>Phone</h3>
+								<p><a>(786) 282-2875</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a>Mudassir9nine@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/muda99/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+									<li><a href="https://github.com/Muda-1999" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
